@@ -1,4 +1,5 @@
 import 'package:easy_byke/pages/login.page.dart';
+import 'package:easy_byke/pages/cadastro.page.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget{
     return MaterialApp(
       title: 'Easy Bike',
       theme: ThemeData(primarySwatch: Colors.deepPurple),
-      home: LoginPage(),
+      home: cadastroPage(),
     );
   }
 }

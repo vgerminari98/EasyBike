@@ -103,35 +103,66 @@ class _LoginPageState extends State<LoginPage> {
                         ),
                       ],
                     ),
-                    SizedBox(
-                      height: 10,
+                    const Text(
+                      'Ou',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.deepPurple, fontSize: 20),
                     ),
-                    Container(
-                      child: ButtonTheme(
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            primary: Colors.white,
-                          ),
-                          onPressed: () => {debugPrint('Pressionando')},
-                          child: Image.asset(
-                            'assets/images/fb-icon.png',
-                            height: 20,
-                            width: 20,
-                            alignment: Alignment.topLeft,
+                    const Text(
+                      'Logar com',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(color: Colors.deepPurple, fontSize: 15),
+                    ),
+                    SizedBox(height: 50),
+                    Row(children: <Widget>[
+                      Expanded(
+                        child: Container(
+                          child: FloatingActionButton(
+                            onPressed: () {
+                              // Add your onPressed code here!
+                            },
+                            child: Image.asset(
+                              'assets/images/fb-icon.png',
+                              height: 20,
+                              width: 20,
+                              alignment: Alignment.topLeft,
+                            ),
+                            backgroundColor: Colors.white,
                           ),
                         ),
                       ),
-                    ),
-                    SizedBox(
-                      height: 10,
-                    ),
-                    Column(children: <Widget>[
-                      Image.asset(
-                        'assets/images/fb-icon.png',
-                        height: 20,
-                        width: 20,
-                        alignment: Alignment.topLeft,
+                      Expanded(
+                        child: Container(
+                          child: FloatingActionButton(
+                            onPressed: () {
+                              // Add your onPressed code here!
+                            },
+                            child: Image.asset(
+                              'assets/images/g-icon.png',
+                              height: 20,
+                              width: 20,
+                              alignment: Alignment.topLeft,
+                            ),
+                            backgroundColor: Colors.white,
+                          ),
+                        ),
                       ),
+                      Expanded(
+                        child: Container(
+                          child: FloatingActionButton(
+                            onPressed: () {
+                              // Add your onPressed code here!
+                            },
+                            child: Image.asset(
+                              'assets/images/tw-icon.png',
+                              height: 20,
+                              width: 20,
+                              alignment: Alignment.topLeft,
+                            ),
+                            backgroundColor: Colors.white,
+                          ),
+                        ),
+                      )
                     ]),
                   ],
                 ),

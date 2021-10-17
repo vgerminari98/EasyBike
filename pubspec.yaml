@@ -30,6 +30,7 @@ flutter:
     - assets/images/g-icon.png
     - assets/images/tw-icon.png
     - assets/images/LOGO.png
+    - assets/images/user.png
 
 fonts:
   - family: VALORANT
