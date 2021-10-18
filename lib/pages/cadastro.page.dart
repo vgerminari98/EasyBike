@@ -14,16 +14,85 @@ class _cadastroPageState extends State<cadastroPage> {
     return Scaffold(
       backgroundColor: Colors.white10,
       body: SingleChildScrollView(
-        child: Container(
-          child: FloatingActionButton(
-            child: Image.asset(
-              'assets/images/user.png',
-              height: 100,
-              width: 100,
-              alignment: Alignment.center,
+        child: Padding(
+          padding: EdgeInsets.all(10),
+          child: Center(
+            child: Column(
+              children: <Widget>[
+                TextFormField(
+                  autofocus: true,
+                  keyboardType: TextInputType.text,
+                  style: new TextStyle(color: Colors.white, fontSize: 30),
+                  decoration: InputDecoration(
+                    labelText: "Seu nome",
+                    labelStyle: TextStyle(color: Colors.white),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(width: 3, color: Colors.greenAccent),
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                ),
+                Divider(),
+                TextFormField(
+                  autofocus: true,
+                  keyboardType: TextInputType.text,
+                  style: new TextStyle(color: Colors.white, fontSize: 30),
+                  decoration: InputDecoration(
+                    labelText: "Seu e-mail",
+                    labelStyle: TextStyle(color: Colors.white),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(width: 3, color: Colors.greenAccent),
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                ),
+                Divider(),
+                TextFormField(
+                  autofocus: true,
+                  obscureText: true,
+                  keyboardType: TextInputType.text,
+                  style: new TextStyle(color: Colors.white, fontSize: 30),
+                  decoration: InputDecoration(
+                    labelText: "Senha",
+                    labelStyle: TextStyle(color: Colors.white),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(width: 3, color: Colors.greenAccent),
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                ),
+                Divider(),
+                TextFormField(
+                  autofocus: true,
+                  obscureText: true,
+                  keyboardType: TextInputType.text,
+                  style: new TextStyle(color: Colors.white, fontSize: 30),
+                  decoration: InputDecoration(
+                    labelText: "Confirmar Senha",
+                    labelStyle: TextStyle(color: Colors.white),
+                    enabledBorder: OutlineInputBorder(
+                      borderSide:
+                          BorderSide(width: 3, color: Colors.greenAccent),
+                      borderRadius: BorderRadius.circular(40),
+                    ),
+                  ),
+                ),
+                Divider(),
+                Container(
+                  child: FloatingActionButton(
+                    onPressed: () {
+                      // Add your onPressed code here!
+                    },
+                    child: const Icon(
+                        Icons.arrow_forward
+                    ),
+                  ),
+                )
+              ],
             ),
-            backgroundColor: Colors.white,
-            onPressed: () {},
           ),
         ),
       ),
